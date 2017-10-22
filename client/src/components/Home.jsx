@@ -1,5 +1,6 @@
 import React from 'react'
 import CreateTodoForm from './CreateTodoForm'
+import TodoListSection from './TodoListSection'
 
 const Home = ({isMobile}) => (
     <div>
@@ -18,6 +19,7 @@ const Home = ({isMobile}) => (
                             <div className="info-box-container">
                                 <div className="rule-box">
                                     <CreateTodoForm />
+                                    <TodoListSection/>
                                 </div>
                             </div>
                         </div>

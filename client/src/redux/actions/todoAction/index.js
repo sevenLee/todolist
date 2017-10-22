@@ -6,6 +6,12 @@ export const createTodo = (text) => ({
     text,
 });
 
+export const editTodo = (id, text) => ({
+    type: 'EDIT_TODO',
+    id,
+    text
+});
+
 export const setDisplayFilter = (filter) => ({
     type: 'SET_DISPLAY_FILTER',
     filter,

@@ -1,1 +1,16 @@
 ## Todo List
+
+### Install dependencies
+```bash
+$ yarn install
+$ cd client
+$ yarn install
+```
+### Start server and client
+```bash
+$ yarn start
+$ cd client
+$ yarn start
+```
+- API Server will be run on localhost:3001
+- Client App will be run on localhost:3000
