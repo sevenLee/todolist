@@ -12,6 +12,7 @@
 
 # misc
 .idea/
+/.idea/
 .DS_Store
 /client/.DS_Store
 /client/.env.local
