@@ -24,12 +24,13 @@ class CreateTodoForm extends Component {
                         this.input.value = '';
                     }}
                 >
-                    <input
+                    <textarea
                         placeholder="Please Input"
                         defaultValue="Good"
+                        className="todo-input"
                         type="text"
                         ref={node => { this.input = node; }} />
-                    <button type="submit">
+                    <button className="submit" type="submit">
                         Create
                     </button>
                 </form>

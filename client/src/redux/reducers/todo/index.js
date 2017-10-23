@@ -39,6 +39,15 @@ const todos = (state= [], action) => {
                 return todo
             })
         }
+        case 'DELETE_TODO': {
+            return state.filter(todo => {
+                if(todo.id === action.id){
+                    return false
+                }
+
+                return true
+            })
+        }
         default:
             return state
     }
@@ -64,6 +73,12 @@ const todoById = (state={}, action) => {
         case 'EDIT_TODO': {
             let newState = cloneDeep(state)
             newState[action.id].text = action.text
+
+            return newState
+        }
+        case 'DELETE_TODO': {
+            let newState = cloneDeep(state)
+            delete newState[action.id]
 
             return newState
         }

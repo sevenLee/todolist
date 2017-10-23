@@ -2,7 +2,7 @@ import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import rootReducer from './redux/reducers'
 import throttle from 'lodash/throttle'
-import { getState, saveState } from '../src/servise/storage'
+import { getState, saveState } from '../src/services/storage'
 
 
 

@@ -9,6 +9,7 @@ import {getTodoWithId} from '../redux/reducers/todo'
 const dispatchActions = {
     toggleTodo: todoAction.toggleTodo,
     editTodo: todoAction.editTodo,
+    deleteTodo: todoAction.deleteTodo
 }
 
 class Todo extends Component{
@@ -21,7 +22,7 @@ class Todo extends Component{
     }
 
     render() {
-        const {todo, toggleTodo, id, editTodo} = this.props
+        const {todo, toggleTodo, id, editTodo, deleteTodo} = this.props
 
         return (
             <li className="todo">
@@ -46,8 +47,14 @@ class Todo extends Component{
                                     <span>Edit</span>
                             }
                         </span>
-
-                        <span className="delete action-btn pull-right">Delete</span>
+                        <span
+                            className="delete action-btn pull-right"
+                            onClick={() => {
+                                if (window.confirm("Do you want to Delete the todo ?")) {
+                                    deleteTodo(id)
+                                }
+                            }}
+                        >Delete</span>
                         <span
                             className="action-btn pull-right"
                             onClick={(e) => {
@@ -79,7 +86,6 @@ export default connect(
     (state, props) => {
         return {
             todo: getTodoWithId(state, props)
-
         }
     },
     dispatchActions

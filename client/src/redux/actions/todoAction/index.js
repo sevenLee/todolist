@@ -12,6 +12,11 @@ export const editTodo = (id, text) => ({
     text
 });
 
+export const deleteTodo = (id, text) => ({
+    type: 'DELETE_TODO',
+    id
+});
+
 export const setDisplayFilter = (filter) => ({
     type: 'SET_DISPLAY_FILTER',
     filter,
