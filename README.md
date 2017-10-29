@@ -1,6 +1,5 @@
 ## Todo List
-[https://github.com/sevenLee/todolist/blob/master/public/preview.png]
-
+[![Preview](https://github.com/sevenLee/todolist/blob/master/public/preview.png?raw=true)](http://github.com/sevenLee/todolist/)
 
 ### Install dependencies
 ```bash
