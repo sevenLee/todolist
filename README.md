@@ -8,7 +8,7 @@ $ yarn install
 ```
 ### Start server and client
 ```bash
-$ yarn start
+$ PORT=3001 yarn start
 $ cd client
 $ yarn start
 ```

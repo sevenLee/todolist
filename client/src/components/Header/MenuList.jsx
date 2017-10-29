@@ -28,7 +28,7 @@ const MenuList = ({open, resetStates}) => {
                 </li>
                 <li>
                     <NavLink
-                        to="/current"
+                        to="/photo"
                         activeClassName="active"
                         onClick={() => {resetStates()}}>Photo Uploader</NavLink>
                 </li>
