@@ -1,5 +1,5 @@
 ## Todo List
-[https://github.com/sevenLee/todolist/blob/master/public/preview.png|alt=preview]
+[https://github.com/sevenLee/todolist/blob/master/public/preview.png]
 
 
 ### Install dependencies
