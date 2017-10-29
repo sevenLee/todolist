@@ -1,4 +1,6 @@
 ## Todo List
+[[https://github.com/sevenLee/todolist/blob/master/public/preview.png|alt=preview]]
+ Contact a human
 
 ### Install dependencies
 ```bash
